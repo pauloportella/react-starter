@@ -1,3 +1,4 @@
+import fetch from "unfetch"
 import React from "react"
 import { ApolloProvider } from "@apollo/react-hooks"
 import { ApolloClient } from "apollo-client"
@@ -8,23 +9,22 @@ import { HttpLink } from "apollo-link-http"
 import { WebSocketLink } from "apollo-link-ws"
 import { setContext } from "apollo-link-context"
 import { OperationDefinitionNode } from "graphql"
-import gql from "graphql-tag"
 
-import useAuth from "services/autentication"
+// import useAuth from "services/autentication"
 
-const createApolloClient = (accessToken, auth) => {
+function createApolloClient(accessToken?: string) {
   const authMiddleware = setContext(async (req, { headers }) => {
-    const token = accessToken
     return {
       headers: {
         ...headers,
-        authorization: token ? `Bearer ${token}` : ""
+        authorization: accessToken ? `Bearer ${accessToken}` : ""
       }
     }
   })
 
   const httpLink = new HttpLink({
-    uri: "https://crowd-buying.herokuapp.com/v1/graphql"
+    uri: "https://crowd-buying.herokuapp.com/v1/graphql",
+    fetch: fetch
   })
 
   const wsLink = new WebSocketLink({
@@ -45,22 +45,6 @@ const createApolloClient = (accessToken, auth) => {
     httpLink
   )
 
-  const typeDefs = gql`
-    extend type companies {
-      isLoggedIn: Boolean!
-      isThisRealLife: String!
-    }
-  `
-
-  const resolvers = () => {
-    return {
-      companies: {
-        x: () => auth.username,
-        isLoggedIn: () => Boolean(auth.username)
-      }
-    }
-  }
-
   const cache = new InMemoryCache({
     freezeResults: true
   })
@@ -68,15 +52,13 @@ const createApolloClient = (accessToken, auth) => {
   return new ApolloClient({
     link: from([authMiddleware, terminatingLink]),
     cache,
-    assumeImmutableResults: true,
-    typeDefs,
-    resolvers: resolvers()
+    assumeImmutableResults: true
   })
 }
 
-export default function Apollo({ children }): React.ReactElement {
-  const [accessToken, authData] = useAuth()
-  const client = createApolloClient(accessToken, authData)
+export function Apollo({ children }): React.ReactElement {
+  // const [accessToken, authData] = useAuth()
+  const client = createApolloClient()
 
   return <ApolloProvider client={client}>{children}</ApolloProvider>
 }

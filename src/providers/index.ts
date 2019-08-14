@@ -1,1 +1,1 @@
-export { default } from "./Providers"
+export { Providers } from "./Providers"
