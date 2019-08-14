@@ -1,8 +1,8 @@
 import React from "react"
 import { addUIComponent } from "utils/storybook"
-import Layout, { ILayoutProps } from "./Layout"
+import { Layout, LayoutProps } from "./Layout"
 
-const propsFn = (): ILayoutProps => ({
+const propsFn = (): LayoutProps => ({
   children: null
 })
 

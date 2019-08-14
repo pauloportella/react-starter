@@ -1,5 +1,5 @@
 import React from "react"
-import App from "core/App"
+import { App } from "core/App"
 import { mount, ReactWrapper } from "enzyme"
 
 it("Renders the app without crashing", () => {

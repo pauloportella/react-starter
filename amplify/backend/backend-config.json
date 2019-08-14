@@ -1,8 +1,0 @@
-{
-  "auth": {
-    "crowdbuying68b325c1": {
-      "service": "Cognito",
-      "providerPlugin": "awscloudformation"
-    }
-  }
-}
