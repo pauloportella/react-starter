@@ -1,0 +1,12 @@
+import React from "react"
+import Enzyme, { mount, ReactWrapper } from "enzyme"
+import Adapter from "enzyme-adapter-react-16"
+
+Enzyme.configure({ adapter: new Adapter() })
+
+import SideNavigation from "./SideNavigation"
+
+it("SideNavigation renders with sucess.", () => {
+  const wrapper: ReactWrapper = mount(<SideNavigation />)
+  expect(wrapper.find(SideNavigation).exists()).toBe(true)
+})

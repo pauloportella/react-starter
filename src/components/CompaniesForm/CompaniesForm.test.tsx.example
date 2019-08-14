@@ -1,0 +1,82 @@
+import React from "react"
+import { mount } from "enzyme"
+import toJson from "enzyme-to-json"
+
+// import {
+//   getByFieldName,
+//   fillInput,
+//   submitForm,
+//   submitFormManually,
+//   clearForm
+// } from "utils/tests/forms"
+import CompaniesForm from "./CompaniesForm"
+import { getInitialValues } from "./service"
+
+describe("<CompaniesForm />", () => {
+  let handleSubmission = jest.fn()
+  let handleCancel = jest.fn()
+  const initialValue = getInitialValues()
+
+  beforeEach(() => {
+    handleSubmission.mockClear()
+    handleCancel.mockClear()
+  })
+
+  it("Submit successfully CompaniesForm", () => {
+    const wrapper = mount(
+      <CompaniesForm onSubmit={handleSubmission} onCancel={handleCancel} />
+    )
+
+    const form = wrapper.find("form")
+    const exampleAttributeInput = getByFieldName(form, "exampleAttribute")
+
+    fillInput(exampleAttributeInput, initialValue.exampleAttribute)
+
+    submitForm(form)
+
+    expect(handleSubmission).toBeCalledWith(initialValue)
+  })
+
+  it("Submit successfully CompaniesForm form manually", () => {
+    test("Submit form", () => {
+      const wrapper = mount(
+        <CompaniesForm onSubmit={handleSubmission} onCancel={handleCancel} />
+      )
+
+      const form = wrapper.find("form")
+      const exampleAttributeInput = getByFieldName(form, "exampleAttribute")
+
+      fillInput(exampleAttributeInput, initialValue.exampleAttribute)
+
+      submitFormManually(form)
+
+      expect(handleSubmission).toBeCalledWith(initialValue)
+    })
+  })
+
+  it("Clears the CompaniesForm form successfully", () => {
+    test("Submit form", () => {
+      const wrapper = mount(
+        <CompaniesForm onSubmit={handleSubmission} onCancel={handleCancel} />
+      )
+
+      const form = wrapper.find("form")
+      const exampleAttributeInput = getByFieldName(form, "exampleAttribute")
+
+      fillInput(exampleAttributeInput, initialValue.exampleAttribute)
+
+      clearForm(form)
+
+      expect(handleCancel).toBeCalled()
+      expect(exampleAttributeInput.text()).toBe("")
+    })
+  })
+
+  it("CompaniesForm should match snapshot", () => {
+    const wrapper = mount(
+      <CompaniesForm onSubmit={handleSubmission} onCancel={handleCancel} />
+    )
+
+    expect(toJson(wrapper)).toMatchSnapshot()
+  })
+})
