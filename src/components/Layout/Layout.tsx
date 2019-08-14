@@ -7,7 +7,7 @@ export interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <StyledLayout>
+    <StyledLayout data-testid="root-container">
       <Main>{children}</Main>
     </StyledLayout>
   )
