@@ -1,10 +1,9 @@
 import React, { Suspense } from "react"
+import GlobalStyle from "config/theme/GlobalStyle"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { Providers } from "providers"
 import { Home } from "pages"
 import { Layout } from "components"
-
-import GlobalStyle from "config/theme/GlobalStyle"
 
 function Routes(): React.ReactElement {
   return (
