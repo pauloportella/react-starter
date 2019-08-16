@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    [
+      "react-intl",
+      {
+        "messagesDir": "./intl/messages/"
+      }
+    ],
+    ["@babel/plugin-proposal-decorators", { "legacy": true }]
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "targets": "> 0.25%, not dead"
+      }
+    ],
+    "@babel/preset-typescript", "@babel/react"]
+}

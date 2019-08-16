@@ -9,10 +9,13 @@ import { HttpLink } from "apollo-link-http"
 import { WebSocketLink } from "apollo-link-ws"
 import { setContext } from "apollo-link-context"
 import { OperationDefinitionNode } from "graphql"
+
 import { BaseProvider, LightTheme } from "baseui"
 import { Provider as StyletronProvider } from "styletron-react"
 import { Client as Styletron } from "styletron-engine-atomic"
 
+import { ThemeProvider } from "styled-components"
+import theme from "config/theme/theme"
 // import useAuth from "services/autentication"
 
 const styletronEngine = new Styletron()
@@ -70,9 +73,11 @@ export function Providers({ children }: ProvidersProps): React.ReactElement {
   const client = createApolloClient()
   return (
     <ApolloProvider client={client}>
-      <StyletronProvider value={styletronEngine}>
-        <BaseProvider theme={LightTheme}>{children}</BaseProvider>
-      </StyletronProvider>
+      <ThemeProvider theme={theme}>
+        <StyletronProvider value={styletronEngine}>
+          <BaseProvider theme={LightTheme}>{children}</BaseProvider>
+        </StyletronProvider>
+      </ThemeProvider>
     </ApolloProvider>
   )
 }

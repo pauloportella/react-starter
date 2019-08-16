@@ -1,9 +1,10 @@
 import React, { Suspense } from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-
 import { Providers } from "providers"
 import { Home } from "pages"
 import { Layout } from "components"
+
+import GlobalStyle from "config/theme/GlobalStyle"
 
 function Routes(): React.ReactElement {
   return (
@@ -16,13 +17,8 @@ function Routes(): React.ReactElement {
 export function App(): React.ReactElement {
   return (
     <Providers>
-      <Suspense
-        fallback={
-          <>
-            <h1>Loading...</h1>
-          </>
-        }
-      >
+      <GlobalStyle />
+      <Suspense fallback={<h1>Loading...</h1>}>
         <Router>
           <Layout>
             <Routes />
