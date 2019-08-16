@@ -1585,10 +1585,10 @@
   resolved "https://registry.yarnpkg.com/@oclif/screen/-/screen-1.0.4.tgz#b740f68609dfae8aa71c3a6cab15d816407ba493"
   integrity sha512-60CHpq+eqnTxLZQ4PGHYNwUX572hgpMHGPtTWMjdTMsAvlm69lZV/4ly6O3sAYkomo4NggGcomrDpBe34rxUqw==
 
-"@pauloportella/form-generator@next":
-  version "0.2.6-0"
-  resolved "https://registry.yarnpkg.com/@pauloportella/form-generator/-/form-generator-0.2.6-0.tgz#16dffa466b268abfcd53993b827aa12bf3b743de"
-  integrity sha512-fBk8FOcwH2ErPOBiaSuzVOLRTg7HszLpr18q7yUPXUzW5zdbvqSYjrNRzru3SQjohSvmNM4cFoAeh2g+X5/RxA==
+"@pauloportella/form-generator@^0.2.7-0":
+  version "0.2.7-0"
+  resolved "https://registry.yarnpkg.com/@pauloportella/form-generator/-/form-generator-0.2.7-0.tgz#ea4882c4b2b114e274779decc562b5d4e0a0cf61"
+  integrity sha512-MH0q8zNJP1z9hbvlTQ+mNBRFA0uudj839FqX0zQvhPT7mVPeZ/ASZize8Y7etxUzQpL09EYyMMqoDVd+yViNVw==
   dependencies:
     formik "1.5.8"
     yup "0.27.0"
