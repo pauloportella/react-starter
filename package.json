@@ -6,7 +6,6 @@
     "start": "rescripts start",
     "build": "rescripts build",
     "test": "rescripts test",
-    "precommit": "pretty-quick --staged",
     "format": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|graphql|graphqls|md)\"",
     "storybook": "start-storybook -p 3001 -c .storybook -s ./public",
     "schema": "apollo client:download-schema --config=.graphqlconfig",
