@@ -1,0 +1,13 @@
+{
+  "Header": {
+    "title": "Wilkomen to React react-i18next"
+  },
+  "Main": {
+    "description": {
+      "part0": "Ths is a simple translated text",
+      "part1": "To get started, edit <1> src/App.js</1> and save to reload.",
+      "part2": "There are {{languageCount}} languages in the world!",
+      "part3": "Learn more about react-i18next by clicking <a href=\"https://github.com/i18next/react-i18next\" target=\"_blank\">here!</a>"
+    }
+  }
+}
