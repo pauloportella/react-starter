@@ -1,13 +1,5 @@
 {
-  "plugins": [
-    [
-      "react-intl",
-      {
-        "messagesDir": "./intl/messages/"
-      }
-    ],
-    ["@babel/plugin-proposal-decorators", { "legacy": true }]
-  ],
+  "plugins": [["@babel/plugin-proposal-decorators", { "legacy": true }]],
   "presets": [
     [
       "@babel/preset-env",
@@ -16,5 +8,7 @@
         "targets": "> 0.25%, not dead"
       }
     ],
-    "@babel/preset-typescript", "@babel/react"]
+    "@babel/preset-typescript",
+    "@babel/react"
+  ]
 }

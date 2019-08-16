@@ -10,12 +10,16 @@ import { WebSocketLink } from "apollo-link-ws"
 import { setContext } from "apollo-link-context"
 import { OperationDefinitionNode } from "graphql"
 
+import { I18nextProvider } from "react-i18next"
+import i18n from "config/intl/i18n"
+
 import { BaseProvider, LightTheme } from "baseui"
 import { Provider as StyletronProvider } from "styletron-react"
 import { Client as Styletron } from "styletron-engine-atomic"
 
 import { ThemeProvider } from "styled-components"
 import theme from "config/theme/theme"
+
 // import useAuth from "services/autentication"
 
 const styletronEngine = new Styletron()
@@ -31,7 +35,7 @@ function createApolloClient(accessToken?: string) {
   })
 
   const httpLink = new HttpLink({
-    uri: "https://crowd-buying.herokuapp.com/v1/graphql",
+    uri: process.env.REACT_APP_GRAPHQL_URI,
     fetch: fetch
   })
 
@@ -73,11 +77,13 @@ export function Providers({ children }: ProvidersProps): React.ReactElement {
   const client = createApolloClient()
   return (
     <ApolloProvider client={client}>
-      <ThemeProvider theme={theme}>
-        <StyletronProvider value={styletronEngine}>
-          <BaseProvider theme={LightTheme}>{children}</BaseProvider>
-        </StyletronProvider>
-      </ThemeProvider>
+      <I18nextProvider i18n={i18n}>
+        <ThemeProvider theme={theme}>
+          <StyletronProvider value={styletronEngine}>
+            <BaseProvider theme={LightTheme}>{children}</BaseProvider>
+          </StyletronProvider>
+        </ThemeProvider>
+      </I18nextProvider>
     </ApolloProvider>
   )
 }
