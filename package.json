@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@apollo/react-hooks": "0.1.0-beta.12",
-    "@pauloportella/form-generator": "^0.2.7-0",
+    "@pauloportella/form-generator": "0.2.7-0",
     "apollo": "2.17.3",
     "apollo-cache-inmemory": "1.6.3",
     "apollo-client": "2.6.4",
