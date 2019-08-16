@@ -9,7 +9,8 @@
     "format": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|graphql|graphqls|md)\"",
     "storybook": "start-storybook -p 3001 -c .storybook -s ./public",
     "schema": "apollo client:download-schema --config=.graphqlconfig",
-    "types": "apollo codegen:generate src/types --target typescript --globalTypesFile=src/types/globalTypes.d.ts --outputFlat "
+    "types": "apollo codegen:generate src/types --target typescript --globalTypesFile=src/types/globalTypes.d.ts --outputFlat ",
+    "translations": "node scripts/merge-translations.ts"
   },
   "dependencies": {
     "@apollo/react-hooks": "0.1.0-beta.12",
