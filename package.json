@@ -93,7 +93,7 @@
     "@types/styletron-engine-atomic": "1.1.0",
     "@types/styletron-react": "5.0.1",
     "@types/styletron-standard": "2.0.0",
-    "@types/yup": "0.26.22",
+    "@types/yup": "0.26.23",
     "babel-core": "6.26.3",
     "babel-plugin-styled-components": "1.10.6",
     "babel-preset-react-app": "9.0.1",
