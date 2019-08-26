@@ -13,11 +13,12 @@
     "translations": "node scripts/merge-translations.ts"
   },
   "dependencies": {
-    "@apollo/react-hooks": "0.1.0-beta.12",
+    "@apollo/react-hooks": "^3.0.1",
     "@pauloportella/form-generator": "0.2.7-0",
     "apollo": "2.17.3",
     "apollo-cache-inmemory": "1.6.3",
     "apollo-client": "2.6.4",
+    "apollo-link": "^1.2.12",
     "apollo-link-context": "1.0.18",
     "apollo-link-http": "1.5.15",
     "apollo-link-ws": "1.0.18",
@@ -37,7 +38,6 @@
     "i18next": "17.0.11",
     "jest-styled-components": "6.3.3",
     "react": "16.9.0",
-    "react-apollo": "2.5.8",
     "react-dom": "16.9.0",
     "react-helmet": "5.2.1",
     "react-i18next": "10.12.2",
@@ -55,6 +55,7 @@
     "yup": "0.27.0"
   },
   "devDependencies": {
+    "@apollo/react-testing": "^3.0.1",
     "@babel/cli": "7.5.5",
     "@babel/core": "7.5.5",
     "@babel/plugin-proposal-decorators": "7.4.4",
