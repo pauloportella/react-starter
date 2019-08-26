@@ -28,7 +28,7 @@
     "aws-sdk": "2.517.0",
     "baseui": "8.16.0",
     "core-js": "3.2.1",
-    "country-list": "2.1.1",
+    "country-list": "2.2.0",
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.14.0",
     "enzyme-to-json": "3.4.0",
