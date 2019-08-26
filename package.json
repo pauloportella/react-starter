@@ -97,7 +97,7 @@
     "babel-core": "6.26.3",
     "babel-plugin-styled-components": "1.10.6",
     "babel-preset-react-app": "9.0.1",
-    "husky": "3.0.3",
+    "husky": "3.0.4",
     "jest-transform-graphql": "2.1.0",
     "lint-staged": "9.2.1",
     "prettier": "1.18.2",
