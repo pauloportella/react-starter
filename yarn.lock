@@ -4215,13 +4215,13 @@ base@^0.11.1:
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
 
-baseui@8.16.0:
-  version "8.16.0"
-  resolved "https://registry.yarnpkg.com/baseui/-/baseui-8.16.0.tgz#2e71c0a4a2731814c06236aa1b2b9ed25e9f99f9"
-  integrity sha512-SlDfN2BPZZqCGaH5so5/YK8M5WYio7EEvQOFbDjeQKg7jS80rojZ1pRqxtrM6fiVzfeP+3zOS0zNu4BjSOmtbg==
+baseui@8.16.5:
+  version "8.16.5"
+  resolved "https://registry.yarnpkg.com/baseui/-/baseui-8.16.5.tgz#f7b8230b5ea5267768af1f783931598eaf2fb7bf"
+  integrity sha512-1uInDT56G5vX5cDWxHDEy6zXFmLlARhvTZ4QfsFzdD0taxR2DqBO5htU8G/2CoXWT16yBhd28sZ9hVgnXjIQ1g==
   dependencies:
     card-validator "^6.1.0"
-    date-fns "2.0.0-beta.4"
+    date-fns "2.0.0-beta.5"
     just-extend "^4.0.2"
     memoize-one "^5.0.0"
     polished "^3.2.0"
@@ -4233,7 +4233,7 @@ baseui@8.16.0:
     react-is "^16.8.6"
     react-movable "^2.2.0"
     react-multi-ref "^1.0.0"
-    react-range "^1.2.0"
+    react-range "^1.3.0"
     react-virtualized "^9.21.1"
     smoothscroll-polyfill "^0.4.3"
     timezone-support "^2.0.0"
@@ -5663,10 +5663,10 @@ data-urls@^1.0.0, data-urls@^1.1.0:
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
 
-date-fns@2.0.0-beta.4:
-  version "2.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.0.0-beta.4.tgz#3e1bf33a15da69481f81972c4a50aad762a81f2c"
-  integrity sha512-xekjYm7ZDBuzePM/GBodhi3hW3P8dd2RbuIOLBjet2E6EGFR82wHTTXCSGuDEoapqlDvsx88ymRsq85lbM7dDw==
+date-fns@2.0.0-beta.5:
+  version "2.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.0.0-beta.5.tgz#90885db3772802d55519cd12acd49de56aca1059"
+  integrity sha512-GS5yi964NDFNoja9yOdWFj9T97T67yLrUeJZgddHaVfc/6tHWtX7RXocuubmZkNzrZUZ9BqBOW7jTR5OoWjJ1w==
 
 date-fns@^1.27.2:
   version "1.30.1"
@@ -12958,10 +12958,10 @@ react-popper@^1.3.3:
     typed-styles "^0.0.7"
     warning "^4.0.2"
 
-react-range@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/react-range/-/react-range-1.2.0.tgz#2f80298c2e4e2c4b07249c057629ab36ac74d42e"
-  integrity sha512-6GJwDdS9+eO/sT09vsoXs7qy2FwwvnzLDfuHwgyodvyPLuKMSvaaiiL9B/FpH24MLty01MsNSUhtKP+5VAsteQ==
+react-range@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/react-range/-/react-range-1.3.0.tgz#68ded5396cf29b765a73a3dc85fe084ca84b8351"
+  integrity sha512-FIVXwY0AIFoLRJRwDKlZtoLA1CZ4ONOtpmSoHwQRD5kMcakPfxpPqvLqHMN9R5lyJqkHO4ljUQdLX+P3vzxuNg==
 
 react-redux@^7.0.2:
   version "7.1.0"
