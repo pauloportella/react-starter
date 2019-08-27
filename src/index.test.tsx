@@ -2,7 +2,6 @@ import React from "react"
 import ReactDOM from "react-dom"
 import { App } from "core/App"
 import { renderWithTheme } from "utils/testing"
-import "@testing-library/jest-dom/extend-expect"
 
 describe("Renders the app without crashing", () => {
   const { getByTestId } = renderWithTheme(<App />)

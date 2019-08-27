@@ -13,7 +13,10 @@ module.exports = {
     const newConfig = {
       ...config,
       setupFiles: ["<rootDir>/test/jest-config/setup.js"],
-      setupFilesAfterEnv: ["<rootDir>/test/jest-config/setupAfterEnv.js"],
+      setupFilesAfterEnv: [
+        "@testing-library/jest-dom/extend-expect",
+        "jest-styled-components"
+      ],
       testURL: "http://localhost",
       collectCoverageFrom: ["src/**/*.{ts,tsx,js,jsx,mjs}"],
       testEnvironment: "node",
