@@ -26,7 +26,7 @@
     "aws-amplify": "1.1.36",
     "aws-amplify-react": "2.3.12",
     "aws-sdk": "2.518.0",
-    "baseui": "8.16.5",
+    "baseui": "8.16.6",
     "core-js": "3.2.1",
     "country-list": "2.2.0",
     "enzyme": "3.10.0",
