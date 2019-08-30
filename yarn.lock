@@ -4216,10 +4216,10 @@ base@^0.11.1:
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
 
-baseui@8.16.6:
-  version "8.16.6"
-  resolved "https://registry.yarnpkg.com/baseui/-/baseui-8.16.6.tgz#7382e93530f0a61a890581d05b3266cf6a668dd7"
-  integrity sha512-36HDiz2yWukCwPjR7zf+q6Ho09EJHaw0lS2ZzOWqSErmkjyXcS9UgYmrVSk8S3wetiAGerz3fno7Jahwi7k9Bw==
+baseui@8.17.0:
+  version "8.17.0"
+  resolved "https://registry.yarnpkg.com/baseui/-/baseui-8.17.0.tgz#03ecbaff15431cfc6188886daa3a69c5c762d42a"
+  integrity sha512-0DotexktkvxzW399WLj9gURRRh4jlxxN38IkO4RDT1xPHTnqORyWr/EdWPZ2FwoOxlWbsRbQJqylIeQ33TgBWg==
   dependencies:
     card-validator "^6.1.0"
     date-fns "2.0.1"
