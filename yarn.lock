@@ -3576,10 +3576,10 @@ await-to-js@^2.0.1:
   resolved "https://registry.yarnpkg.com/await-to-js/-/await-to-js-2.1.1.tgz#c2093cd5a386f2bb945d79b292817bbc3f41b31b"
   integrity sha512-CHBC6gQGCIzjZ09tJ+XmpQoZOn4GdWePB4qUweCaKNJ0D3f115YdhmYVTZ4rMVpiJ3cFzZcTYK1VMYEICV4YXw==
 
-aws-amplify-react@2.3.12:
-  version "2.3.12"
-  resolved "https://registry.yarnpkg.com/aws-amplify-react/-/aws-amplify-react-2.3.12.tgz#e489e865daf403fb81f1b6533616d64b0aaa4433"
-  integrity sha512-BBF+CalgX0nsMc/WE777i7JHBGv04wOe3hTNnQlfrBtdIkorWYIMQGfXzV3F5hbSloQ9ly77VgCxjD9OnLB4qg==
+aws-amplify-react@2.6.3:
+  version "2.6.3"
+  resolved "https://registry.yarnpkg.com/aws-amplify-react/-/aws-amplify-react-2.6.3.tgz#b7bbfce30ad4ab6e83ce77c50f5d837f05d1fdfe"
+  integrity sha512-fptSdGvBNvtEAn/tAN3dDm2SFRSpWafYVFywh/WVFYbDIULdjQEbTW0ZjefVDQcu2KMwlFf0O/wRNQRqqrqlwA==
   dependencies:
     qrcode.react "^0.8.0"
     regenerator-runtime "^0.11.1"
