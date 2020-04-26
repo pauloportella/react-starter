@@ -104,7 +104,7 @@
     "pretty-quick": "1.11.1",
     "react-app-rewire-styled-components": "3.0.2",
     "react-app-rewire-styled-components-typescript": "1.0.1",
-    "react-docgen-typescript-loader": "3.1.1",
+    "react-docgen-typescript-loader": "3.7.2",
     "storybook-react-router": "1.0.5",
     "ts-import-plugin": "1.6.1",
     "typescript": "3.5.3",
