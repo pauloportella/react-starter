@@ -47,7 +47,7 @@
     "regenerator-runtime": "0.13.3",
     "store": "2.0.12",
     "styled-components": "4.3.2",
-    "styletron-engine-atomic": "1.4.0",
+    "styletron-engine-atomic": "1.4.8",
     "styletron-react": "5.2.0",
     "subscriptions-transport-ws": "0.9.16",
     "ts-loader": "6.0.4",
